@@ -10,6 +10,8 @@ def lottoRandomSzamokGenerlasa():
     lista = []
     while index < 5:
         veletlenSzamok = math.floor(random.random()*(101-1)+1)
+        while veletlenSzamok in lista:
+            veletlenSzamok = math.floor(random.random() * (101 - 1) + 1)
         lista.append(veletlenSzamok)
         index+=1
     return lista
@@ -69,7 +71,15 @@ def bekeresOtDb(lista):
             print("Sajnos nem nyert :(")
 
         index+=1
-
+def bekeresOtDbTalalat(lista):
+    index =0
+    osszeg = 0
+    while index < 5:
+        szam = int(input("Szeretnek kerni egy szamot: "))
+        if szam in lista:
+            osszeg += 1
+        index+=1
+    return osszeg
 
 
 
