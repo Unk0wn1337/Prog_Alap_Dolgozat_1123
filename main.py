@@ -23,6 +23,7 @@ import feladatok
 
 # Lottos Feladataok
 randomSzamokLista = lottosListaFeladatok.lottoRandomSzamokGenerlasa()
+print("Ennyi darab szam egyezik a bekerttel:",lottosListaFeladatok.eldontesTetele(randomSzamokLista),"db")
 print("Lista elemei:",randomSzamokLista)
 print("Atlaguk",lottosListaFeladatok.LottoSzamokAtlaga(randomSzamokLista))
 print("Nagyobb mint 50-en",lottosListaFeladatok.nagyobbEMintOtven(randomSzamokLista))
@@ -31,3 +32,4 @@ print("Legkisebb szám:",lottosListaFeladatok.legkisebbSzam(randomSzamokLista))
 legnagyobbSzam = lottosListaFeladatok.legnagyobbSzam(randomSzamokLista)
 legkisebbSzam = lottosListaFeladatok.legkisebbSzam(randomSzamokLista)
 print("Legnagyobb - legkisebb",(legnagyobbSzam-legkisebbSzam))
+lottosListaFeladatok.bekeresOtDb(randomSzamokLista)

@@ -52,7 +52,25 @@ def legkisebbSzam(lista):
     return min
 
 def eldontesTetele(lista):
-    pass
+    szamBekeres:int = int(input("Szeretnek kerni egy szamot: "))
+    van = 0
+    index = 0
+    while index < len(lista):
+        if lista[index] == szamBekeres:
+            van += 1
+        index+=1
+    return van
+
+def bekeresOtDb(lista):
+    index =0
+    while index < 5:
+        szam = int(input("Szeretnek kerni egy szamot: "))
+        if szam not in lista:
+            print("Sajnos nem nyert :(")
+
+        index+=1
+
+
 
 
 
